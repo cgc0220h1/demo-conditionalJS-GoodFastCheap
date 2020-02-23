@@ -7,6 +7,7 @@ let stateCheap;
 let stateCurrent;
 
 function check() {
+    console.log("state-start: " + stateCurrent);
     switch (stateCurrent) {
         case "ab0":
             document.getElementById('checkFast').checked = false;
@@ -25,4 +26,5 @@ function check() {
     stateFast = (ischeckedFast) ? "b" : 0;
     stateCheap = (ischekedCheap) ? "c" : 0;
     stateCurrent = stateGood + stateFast + stateCheap;
+    console.log("state-end: " + stateCurrent);
 }
