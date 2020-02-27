@@ -7,12 +7,13 @@
 </head>
 <body>
 <p>Ứng dụng Good Fast Cheap (Ngon Bổ Rẻ)</p>
+<p>Hãy cố gắng bật cả 3 công tắc cùng lúc</p>
 <div class="Good">
     <div class="labelswitch">
         <p>Good(Ngon)</p>
     </div>
     <label class="switch">
-        <input type="checkbox" id="checkGood" onclick="flipSwitch()">
+        <input type="checkbox" id="checkGood" onclick="flipSwitch(this.id)">
         <span class="slider round"></span>
     </label>
 </div>
@@ -21,7 +22,7 @@
         <p>Fast (Bổ)</p>
     </div>
     <label class="switch">
-        <input type="checkbox" id="checkFast" onclick="flipSwitch()">
+        <input type="checkbox" id="checkFast" onclick="flipSwitch(this.id)">
         <span class="slider round"></span>
     </label>
 </div>
@@ -30,7 +31,7 @@
         <p>Cheap (Rẻ)</p>
     </div>
     <label class="switch">
-        <input type="checkbox" id="checkCheap" onclick="flipSwitch()">
+        <input type="checkbox" id="checkCheap" onclick="flipSwitch(this.id)">
         <span class="slider round"></span>
     </label>
 </div>
